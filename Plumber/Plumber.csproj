@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Tube1_1.png" />
+    <None Remove="Tube5_5.png" />
+    <None Remove="water.jpg" />
+    <None Remove="whiteScreen.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Tube1_1.png" />
+    <Resource Include="Tube5_5.png" />
+    <Resource Include="water.jpg" />
+    <Resource Include="whiteScreen.png" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Helga\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Helga\\.nuget\\packages"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+﻿<Window x:Class="Plumber.Scores"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Plumber"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen" 
+        KeyDown="myTestKey"
+        Title="Plumber" Height="512" Width="720">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="D:\helga\university\programming\university\year\images\background\Background2.png" Stretch="Fill"/>
+        </Grid.Background>
+
+        <Rectangle Width="605" Height="451.5" Margin="0,0,0,0" Fill="#D7E9FD" Opacity="0.8"/>
+        <TextBlock FontFamily="D:\helga\university\programming\university\year\PlumberWPF\Plumber\Resources\fonts\#Icegirl [rus by aLiNcE]"
+                   Width="600" Height="65" FontSize="80px" 
+                   FontWeight="Normal" Foreground="#D7E9FD"
+                   Margin="15,-15,5,346">
+            <TextBlock.Effect>
+                <DropShadowEffect
+                    ShadowDepth="3"
+                    Direction="150"
+                    Color="#839ACC"
+                    Opacity="0.5"
+                    BlurRadius="0.5" />
+            </TextBlock.Effect>
+            Таблиця рекордів
+        </TextBlock>
+        <Line X1="58" X2="600" Y1="105" Y2="105" StrokeThickness="2" Stroke="#0D7C87"/>
+        <Grid Name="Results" Height="280" Width="500" Margin="0,60,0,0">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <TextBlock Name="TextResult"
+                       FontFamily="D:\helga\university\programming\university\year\PlumberWPF\Plumber\Resources\fonts\#Yahfie" 
+                       FontSize="20px" Foreground="#0D7C87"></TextBlock>
+            </ScrollViewer>
+        </Grid>
+        <Button Name="ComeBackButton" Width="231" Height="45" Margin="-35,390,324,-32" 
+                Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="ComeBackButton_Click">
+            <TextBlock Name="Exit"  Width="231" Height="35" FontFamily="D:\helga\university\programming\university\year\PlumberWPF\Plumber\Resources\fonts\#Yahfie" 
+                       FontSize="30px" Foreground="#D7E9FD">Повернутися назад</TextBlock>
+        </Button>
+    </Grid>
+</Window>

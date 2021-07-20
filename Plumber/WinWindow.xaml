@@ -1,0 +1,25 @@
+﻿<Window x:Class="Plumber.WinWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Plumber"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen" 
+        Title="You are winner!" Height="256" Width="360">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="D:\helga\university\programming\university\year\images\background\Background2.png" Stretch="Fill"/>
+        </Grid.Background>
+
+        <Rectangle Width="310" Height="200" Margin="0,0,0,0" Fill="#D7E9FD" Opacity="0.8"/>
+        <TextBlock FontFamily="D:\helga\university\programming\university\year\PlumberWPF\Plumber\Resources\fonts\#Shnobel" FontSize="50px" 
+                       FontWeight="Regular" TextAlignment="Center" Foreground="#839ACC"
+                       HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,60,0,0">Ви виграли!</TextBlock>
+        <TextBox Name="GamerName" Width="200" Height="50" Margin="80,125,80,65" MaxLength="100"
+                 TextChanged="GamerName_TextChanged"
+                 GotFocus="GamerName_GotFocus" KeyDown="GamerName_KeyDown" Opacity="0.7">Введіть ваше ім'я</TextBox>
+        <Button Name="OK" Width="30" Height="30" Margin="115,130,115,-20"
+                Click="OK_Click">OK</Button>
+    </Grid>
+</Window>

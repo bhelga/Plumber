@@ -1,0 +1,17 @@
+﻿<Application x:Class="Plumber.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Plumber"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="Finger_Paint">
+            <Setter Property="TextElement.FontFamily" Value="/Resources/fonts/#Finger Paint" />
+        </Style>
+        <Style x:Key="Barriecito">
+            <Setter Property="TextElement.FontFamily" Value="/Resources/fonts/#Barriecito" />
+        </Style>
+        <Style x:Key="Architects_Daughter">
+            <Setter Property="TextElement.FontFamily" Value="/Resources/fonts/#Architects Daughter" />
+        </Style>
+    </Application.Resources>
+</Application>
